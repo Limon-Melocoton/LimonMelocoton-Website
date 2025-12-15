@@ -1,0 +1,58 @@
+/* style.css */
+
+/* Reset y estilo base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #FFE27A, #FFB74D);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  color: #3B2E2A;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+p {
+  font-size: clamp(1.2rem, 5vw, 2rem);
+  margin-bottom: 2rem;
+}
+
+.socials {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.socials a {
+  text-decoration: none;
+  color: #3B2E2A;
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  transition: transform 0.2s, color 0.2s;
+}
+
+.socials a:hover {
+  transform: scale(1.2);
+  color: #ffffff;
+}
+
+.footer {
+  font-size: clamp(0.8rem, 3vw, 1rem);
+  position: absolute;
+  bottom: 20px;
+  opacity: 0.8;
+}
