@@ -84,10 +84,7 @@ p {
 
 .footer {
   font-size: clamp(0.8rem, 3vw, 1rem);
-  position: absolute;
-  bottom: 20px;
   margin-top: 2rem; /* space from content */
   opacity: 0.8;
   text-align: center;
-
 }
