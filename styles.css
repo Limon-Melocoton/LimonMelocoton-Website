@@ -1,44 +1,69 @@
-/* style.css */
-
-/* Reset y estilo base */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Body and layout */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #fff3c7, #ffe998);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #3B2E2A;
+  text-align: center;
+}
+
+/* Main content grows to push footer down */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Logo */
 .logo {
-  max-width: 300px; /* Adjust as needed */
-  width: 50vw;      /* Responsive width */
+  width: 50%;
+  max-width: 300px;
   height: auto;
   margin-bottom: 1rem;
 }
 
-body {
-  font-family: 'Arial', sans-serif;
-  background: linear-gradient(135deg, #fff3c7, #ffe998);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  text-align: center;
-  color: #3B2E2A;
-  padding: 2rem;
-}
-
-h1 {
-  font-size: clamp(2.5rem, 8vw, 5rem);
-  margin-bottom: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-}
-
-p {
+/* Coming soon text */
+.coming-soon {
   font-size: clamp(1.2rem, 5vw, 2rem);
   margin-bottom: 2rem;
 }
 
+/* Testimonials */
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 600px;
+  width: 90%;
+  margin-bottom: 2rem;
+}
+
+.testimonial {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 1rem 1rem;
+  border-radius: 12px;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  font-style: italic;
+  color: #3B2E2A;
+}
+
+.testimonial p {
+  margin: 0;
+}
+
+/* Socials */
 .socials {
   display: flex;
   gap: 1.5rem;
@@ -46,9 +71,7 @@ p {
 }
 
 .socials a {
-  text-decoration: none;
   color: #3B2E2A;
-  font-size: clamp(1.0rem, 3vw, 1.5rem);
   transition: transform 0.2s, color 0.2s;
 }
 
@@ -57,34 +80,10 @@ p {
   color: #ffffff;
 }
 
-/* Testimonios / frases de referals */
-.testimonials {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin: 1rem 0;
-  max-width: 600px;
-  width: 90%;
-}
-
-.testimonial {
-  background: rgba(255, 255, 255, 0.3);
-  padding: 1rem 1rem;
-  border-radius: 12px;
-  font-size: clamp(0.5rem, 1vw, 1rem);
-  font-style: italic;
-  color: #3B2E2A;
-  position: relative;
-}
-
-.testimonial p {
-  margin: 0;
-  padding: 0;
-}
-
+/* Footer */
 .footer {
   font-size: clamp(0.8rem, 3vw, 1rem);
-  margin-top: 2rem; /* space from content */
   opacity: 0.8;
   text-align: center;
+  margin: 1rem 0;
 }
