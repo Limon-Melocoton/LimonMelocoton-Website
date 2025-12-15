@@ -7,9 +7,16 @@
   box-sizing: border-box;
 }
 
+.logo {
+  max-width: 200px; /* Adjust as needed */
+  width: 30vw;      /* Responsive width */
+  height: auto;
+  margin-bottom: 1rem;
+}
+
 body {
   font-family: 'Arial', sans-serif;
-  background: linear-gradient(135deg, #FFE27A, #FFB74D);
+  background: linear-gradient(135deg, #ffedaa, #ffd391);
   display: flex;
   flex-direction: column;
   justify-content: center;
