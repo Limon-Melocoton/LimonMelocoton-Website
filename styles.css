@@ -57,13 +57,6 @@ p {
   color: #ffffff;
 }
 
-.footer {
-  font-size: clamp(0.8rem, 3vw, 1rem);
-  position: absolute;
-  bottom: 20px;
-  opacity: 0.8;
-}
-
 /* Testimonios / frases de referals */
 .testimonials {
   display: flex;
@@ -82,4 +75,19 @@ p {
   font-style: italic;
   color: #3B2E2A;
   position: relative;
+}
+
+.testimonial p {
+  margin: 0;
+  padding: 0;
+}
+
+.footer {
+  font-size: clamp(0.8rem, 3vw, 1rem);
+  position: absolute;
+  bottom: 20px;
+  margin-top: 2rem; /* space from content */
+  opacity: 0.8;
+  text-align: center;
+
 }
