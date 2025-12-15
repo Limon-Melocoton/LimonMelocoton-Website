@@ -56,3 +56,32 @@ p {
   bottom: 20px;
   opacity: 0.8;
 }
+
+/* Testimonios / frases de referals */
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 2rem 0;
+  max-width: 600px;
+  width: 90%;
+}
+
+.testimonial {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  font-size: clamp(1rem, 4vw, 1.3rem);
+  font-style: italic;
+  color: #3B2E2A;
+  position: relative;
+}
+
+.testimonial span {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: clamp(0.8rem, 3vw, 1rem);
+  font-style: normal;
+  text-align: right;
+  opacity: 0.8;
+}
