@@ -41,6 +41,20 @@ body {
   margin-bottom: 2rem;
 }
 
+.contact-text {
+  font-size: 1rem;
+  color: #3B2E2A;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contact-text:hover {
+  color: #ffa500; /* hover color */
+  text-decoration: underline;
+}
+
 /* Testimonials */
 .testimonials {
   display: flex;
